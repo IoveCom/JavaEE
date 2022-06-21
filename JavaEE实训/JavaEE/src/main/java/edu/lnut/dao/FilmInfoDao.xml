@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.lnut.dao.FilmInfoDao">
+    <select id="selectFilmInfoList" resultMap="FilmInforesultMap"
+		parameterType="String">
+		select `电影信息表`.*,`主题表`.* from `电影信息表` ,`电影主题表`,`主题表`
+		
+        <where>
+
+			`电影信息表`.`电影编号` = `电影主题表`.`电影编号` and `电影主题表`.`电影主题` =
+			`主题表`.`主题编号`
+			and
+			`电影信息表`.`电影编号`=#{id};
+		</where>
+    </select>
+    <resultMap type="edu.lnut.po.FilmInfo" id="FilmInforesultMap">
+        <result property="film_id" column="电影编号" />
+        <result property="film_name" column="电影名" />
+        <result property="release_date" column="上映日期" />
+        <result property="film_intro" column="剧情简介" />
+        <result property="img_path" column="图片路径" />
+        <collection property="Themes"
+			ofType="edu.lnut.po.Theme">
+            <result property="theme_id" column="主题编号" />
+            <result property="theme_name" column="主题名称" />
+        </collection>
+    </resultMap>
+</mapper>

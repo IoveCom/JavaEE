@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.modbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.myDiv {
+    color: #666;
+    position: relative;
+    margin: 0 0 40px;
+    padding: 1px 26px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 13px;
+}
+
+.style {
+    color: #666;
+    position: relative;
+    margin: 26px 0;
+    padding: 0 0 0 90px;
+}
+
+.style span {
+    font: 12px/1.5 numFont, PingFangSC-Regular, Tahoma, Microsoft Yahei, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 50px;
+    margin: 0 20px 0 0;
+    padding: 0 5px;
+    border-radius: 16px 0 16px 16px;
+    background-color: #7f7f8c;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+}
+
+.style a {
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 0;
+    padding: 0 10px;
+    border-radius: 15px;
+    line-height: 28px;
+    vertical-align: top;
+    color: #666;
+}
+.style a:hover {
+    color: #ff5c38 !important;
+}
+
+.vedionbox {
+    color: #666;
+    padding: 0;
+    position: relative;
+    margin: 0 -18px -40px 0;
+    font-size: 0;
+    width: 1300px;
+    letter-spacing: -5px;
+}
+
+.list_item {
+
+    word-break: break-all;
+    display: inline-block;
+    position: relative;
+    margin: 0 18px 40px 0;
+    padding: 0;
+    color: #999;
+    font-size: 12px;
+    letter-spacing: normal;
+    vertical-align: top;
+    width: 185px;
+}
+
+.figure {
+    font: 12px/1.5 numFont, PingFangSC-Regular, Tahoma, Microsoft Yahei, sans-serif;
+    word-break: break-all;
+    font-size: 12px;
+    letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #111;
+    display: block;
+    position: relative;
+    user-select: none;
+    outline: 0 none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    width: 185px;
+    height: 259px;
+}
+
+.figure_pic {
+    vertical-align: bottom;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    background: rgba(236, 236, 236, .1);
+    transition: box-shadow .15s linear, -webkit-filter .3s ease-out;
+}
+
+.figure_caption {
+
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    padding: 10px 10px 4px;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 25.5%, rgba(0, 0, 0, .08) 70%, rgba(0, 0, 0, 0));
+    color: #fff;
+    font-size: 13px;
+    text-overflow: ellipsis;
+
+}
+
+.figure_score {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+    width: 35px;
+    height: 28px;
+    color: #ff5c38;
+    line-height: 28px;
+    text-align: center;
+}
+.figure_detail{text-align: center;
+     height: 44px;
+    overflow: hidden;
+}
+.figure_detail a{
+
+    width: 100%;
+    text-overflow: ellipsis;
+    height: auto;
+    overflow: hidden;
+    line-height: 23px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+    }
+.figure_desc{
+    text-align: center;
+
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}

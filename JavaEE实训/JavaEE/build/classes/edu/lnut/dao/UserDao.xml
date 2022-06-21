@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.lnut.dao.UserDao">
+    <select id="findUserFilm" resultMap="UserInforesultMap"
+		parameterType="String">
+		select * from 用户信息表 where `用户信息表`.`用户名`=#{userName}
+	</select>
+   
+    
+     <select id="findUserEmail" resultMap="UserInforesultMap"
+		parameterType="String">
+		select * from 用户信息表 where `用户信息表`.`邮箱`=#{userEmail};
+	</select>
+    <resultMap type="edu.lnut.po.User" id="UserInforesultMap">
+        <result property="userid" column = "用户编号"/>
+        <result property="username" column = "用户名"/>
+        <result property="password" column = "密码"/>
+        <result property="email" column = "邮箱"/>
+    </resultMap>
+</mapper>
